@@ -12,8 +12,17 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
+  
     <div class="heart">
       <i class="fa-solid fa-heart"></i>
     </div>
+	<script>
+				const audio = document.createElement('audio')
+				document.body.appendChild(audio)
+				audio.src = './videoplayback.m4a'
+				document.body.addEventListener('click',()=>{
+					audio.play()
+				})
+	</script>
   </body>
 </html>
