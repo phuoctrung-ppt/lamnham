@@ -7,22 +7,42 @@
     <title>Document</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-  
-    <div class="heart">
-      <i class="fa-solid fa-heart"></i>
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-12 mt-5 d-flex justify-content-center">
+          <div class="box">
+            <div class="box-body">
+              <div class="heart">
+                <i class="fa-solid fa-heart"></i>
+              </div>
+              <div class="box-lid">
+                <div class="box-bowtie"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <h3 class="hold-me">
+            <strong>Hold me</strong>
+          </h3>
+        </div>
+      </div>
     </div>
-	<script>
-				const audio = document.createElement('audio')
-				document.body.appendChild(audio)
-				audio.src = './videoplayback.m4a'
-				document.body.addEventListener('click',()=>{
-					audio.play()
-				})
-	</script>
+    <script>
+      const audio = document.createElement("audio");
+      document.body.appendChild(audio);
+      audio.src = "./videoplayback.m4a";
+
+      document.body.addEventListener("click", () => {
+        audio.play();
+      });
+
+      const animated = [];
+    </script>
   </body>
 </html>
